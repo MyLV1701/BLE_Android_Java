@@ -1,15 +1,18 @@
 package com.example.ble.view;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ble.R;
+import com.example.ble.controller.BLEBroadcastManager;
 import com.example.ble.model.DevicesModel;
 import com.example.ble.view.recycleViews.DevicesListAdapter;
 
@@ -20,6 +23,8 @@ import java.util.function.Consumer;
  * ② 検知したデバイス一覧画面
  */
 public class DevicesListActivity extends AppCompatActivity {
+    final String DEVICES_LIST_LOCAL_BROADCAST = "devices-list-action-local-broadcast";
+
     RecyclerView rvDevices;
 
     DevicesListAdapter adapter;
@@ -29,6 +34,7 @@ public class DevicesListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_devices_list);
+        LocalBroadcastManager.getInstance(getApplicationContext()).registerReceiver(BLEBroadcastManager.devicesListBroadReceiver, new IntentFilter(DEVICES_LIST_LOCAL_BROADCAST));
         rvDevices = (RecyclerView) findViewById(R.id.rvDevices);
         rvDevices.setHasFixedSize(true);
         rvDevices.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
@@ -47,6 +53,13 @@ public class DevicesListActivity extends AppCompatActivity {
         Log.e("CLICKED_BUTTON", " User is clicked at "+position);
         //TODO: Di chuyen den man hinh detail vs position
         Intent i = new Intent(getApplicationContext(),DevicesInfoActivity.class);
+        i.putExtra("id","BLE "+position);
         startActivity(i);
     };
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        LocalBroadcastManager.getInstance(getApplicationContext()).unregisterReceiver(BLEBroadcastManager.devicesListBroadReceiver);
+    }
 }
