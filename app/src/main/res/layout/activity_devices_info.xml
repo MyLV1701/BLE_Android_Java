@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DevicesInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/info_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/detail_info_disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="DISCONNECT"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/detail_info_connect_status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="接続状態"
+            app:layout_constraintTop_toBottomOf="@+id/detail_info_connect" />
+        <Button
+            android:id="@+id/detail_info_unlock1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="UNLOCK"
+            app:layout_constraintTop_toBottomOf="@+id/detail_info_connect_status" />
+        <Button
+            android:id="@+id/detail_info_unlock2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="UNLOCK"
+            app:layout_constraintTop_toBottomOf="@+id/detail_info_unlock1" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
