@@ -39,7 +39,7 @@ public class DevicesListAdapter extends RecyclerView.Adapter<DevicesListHolder> 
     @Override
     public void onBindViewHolder(@NonNull DevicesListHolder holder, int position) {
         holder.txtDevicesName.setText(String.valueOf(list.get(position).getName()));
-        holder.layout.setBackgroundColor(androidx.cardview.R.color.cardview_dark_background);
+//        holder.layout.setBackgroundColor(androidx.cardview.R.color.cardview_dark_background);
 //        holder.btnConnect.setText(String.valueOf(list.get(position).getConnectStatus()));
 //        if (position == operationNum){
 //            holder.layout.setBackgroundColor(R.color.purple_200);
@@ -47,7 +47,7 @@ public class DevicesListAdapter extends RecyclerView.Adapter<DevicesListHolder> 
 //            holder.layout.setBackgroundColor(androidx.cardview.R.color.cardview_dark_background);
 //        }
         holder.btnConnect.setOnClickListener(view -> listener.accept(position));
-        holder.layout.setOnClickListener(view -> listener.accept(position));
+//        holder.layout.setOnClickListener(view -> listener.accept(position));
     }
 
     @Override
