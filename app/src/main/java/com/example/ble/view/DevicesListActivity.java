@@ -15,6 +15,7 @@ import com.example.ble.R;
 import com.example.ble.controller.BLEBroadcastManager;
 import com.example.ble.model.DevicesModel;
 import com.example.ble.view.recycleViews.DevicesListAdapter;
+import com.example.ble.view.utils.ViewControllerUtils;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
@@ -56,6 +57,12 @@ public class DevicesListActivity extends AppCompatActivity {
         i.putExtra("id","BLE "+position);
         startActivity(i);
     };
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ViewControllerUtils.hideNavigationBar(getWindow());
+    }
 
     @Override
     protected void onDestroy() {

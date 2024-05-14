@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.ble.R;
 import com.example.ble.controller.BLEBroadcastManager;
+import com.example.ble.view.utils.ViewControllerUtils;
 
 /**
  * 制御画面
@@ -35,6 +36,11 @@ public class DevicesInfoActivity extends AppCompatActivity {
         String value = getIntent().getExtras().getString("id");
         txtTitle = findViewById(R.id.txt_title_detail);
         txtTitle.setText(value);
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ViewControllerUtils.hideNavigationBar(getWindow());
     }
 
     @Override
