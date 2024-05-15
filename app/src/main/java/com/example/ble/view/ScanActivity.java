@@ -30,6 +30,8 @@ public class ScanActivity extends AppCompatActivity {
             //Di chuyen den man hinh Device List
             Intent i = new Intent(getApplicationContext(),DevicesListActivity.class);
             startActivity(i);
+
+            //TODO: Them xu li khi bam nut SCAN
         });
     }
 

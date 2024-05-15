@@ -51,11 +51,13 @@ public class DevicesListActivity extends AppCompatActivity {
         rvDevices.scrollToPosition(id);
     }
     public final Consumer<Integer> listener = (position)-> {
-        Log.e("CLICKED_BUTTON", " User is clicked at "+position);
-        //TODO: Di chuyen den man hinh detail vs position
+        Log.d("CLICKED_BUTTON", " User is clicked at "+position);
+        //Di chuyen den man hinh Device Info with ID
         Intent i = new Intent(getApplicationContext(),DevicesInfoActivity.class);
         i.putExtra("id","BLE "+position);
         startActivity(i);
+
+        //TODO: Them xu li khi bam nut CONNECT
     };
 
     @Override
