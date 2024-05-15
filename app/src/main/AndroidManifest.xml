@@ -26,7 +26,8 @@
         </activity>
         <activity
             android:name=".view.DevicesListActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
