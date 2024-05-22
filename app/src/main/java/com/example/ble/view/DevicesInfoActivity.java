@@ -21,7 +21,7 @@ public class DevicesInfoActivity extends AppCompatActivity {
     final String DEVICES_INFO_LOCAL_BROADCAST = "devices-info-action-local-broadcast";
 
     Button btnDisconnect;
-    Button btnConnectStatus;
+    TextView txtConnectStatus;
     Button btnUnlock1;
     Button btnUnlock2;
     TextView txtTitle;
@@ -40,10 +40,10 @@ public class DevicesInfoActivity extends AppCompatActivity {
         String value = getIntent().getExtras().getString("id");
         txtTitle = findViewById(R.id.txt_title_detail);
         txtTitle.setText(value);
-        btnConnectStatus = findViewById(R.id.detail_info_connect_status);
-        btnConnectStatus.setOnClickListener(view -> {
-            //TODO: Them xu li khi bam nut 接続状態
-        });
+        txtConnectStatus = findViewById(R.id.detail_info_connect_status);
+//        txtConnectStatus.setOnClickListener(view -> {
+//            //TODO: Them xu li khi bam nut 接続状態
+//        });
 
         btnUnlock1 = findViewById(R.id.detail_info_unlock1);
         btnUnlock1.setOnClickListener(view -> {
