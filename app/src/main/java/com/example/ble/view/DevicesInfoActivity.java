@@ -34,6 +34,7 @@ public class DevicesInfoActivity extends AppCompatActivity {
         btnDisconnect = findViewById(R.id.detail_info_disconnect);
         btnDisconnect.setOnClickListener(view -> {
              Intent i = new Intent(getApplicationContext(),DevicesListActivity.class);
+             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
              startActivity(i);
             //TODO: Them xu li khi bam nut DISCONNECT
         });
@@ -41,9 +42,6 @@ public class DevicesInfoActivity extends AppCompatActivity {
         txtTitle = findViewById(R.id.txt_title_detail);
         txtTitle.setText(value);
         txtConnectStatus = findViewById(R.id.detail_info_connect_status);
-//        txtConnectStatus.setOnClickListener(view -> {
-//            //TODO: Them xu li khi bam nut 接続状態
-//        });
 
         btnUnlock1 = findViewById(R.id.detail_info_unlock1);
         btnUnlock1.setOnClickListener(view -> {
@@ -54,6 +52,8 @@ public class DevicesInfoActivity extends AppCompatActivity {
         btnUnlock2.setOnClickListener(view -> {
             //TODO: Them xu li khi bam nut UNLOCK2
         });
+
+        findViewById(R.id.app_name).findViewById(R.id.btnNavigation).setOnClickListener(view -> finish());
     }
     @Override
     protected void onResume() {

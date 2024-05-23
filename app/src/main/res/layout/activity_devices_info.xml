@@ -7,17 +7,12 @@
     android:background="@color/white"
     tools:context=".view.DevicesInfoActivity">
 
-    <TextView
+    <view
         android:id="@+id/app_name"
+        class="com.example.ble.view.header.AppNameView"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="@string/app_name"
-        android:textColor="@color/white"
-        android:background="@drawable/border_gray"
-        android:textSize="@dimen/text_size"
-        android:paddingTop="@dimen/padding_size"
-        android:paddingBottom="@dimen/padding_size"
-        android:paddingStart="@dimen/padding_size"
+        android:layout_height="70dp"
+        android:visibility="visible"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
