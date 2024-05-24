@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/khoi.nguyen/Documents/APP/BLEApplication/app/src/main/res/drawable/default_view_layout.xml" value="0.1845" />
+        <entry key="..\:/Users/khoi.nguyen/Documents/APP/BLEApplication/app/src/main/res/layout/activity_devices_info.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/khoi.nguyen/Documents/APP/BLEApplication/app/src/main/res/layout/activity_devices_list.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/khoi.nguyen/Documents/APP/BLEApplication/app/src/main/res/layout/activity_scan.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/khoi.nguyen/Documents/APP/BLEApplication/app/src/main/res/layout/devices_view_holder.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/khoi.nguyen/Documents/APP/BLEApplication/app/src/main/res/layout/view_app_name.xml" value="0.17604166666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
