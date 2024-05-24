@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:background="@android:color/transparent"
-            android:src="@drawable/img_app_name"
+            android:src="@drawable/arrow_back_effect"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
