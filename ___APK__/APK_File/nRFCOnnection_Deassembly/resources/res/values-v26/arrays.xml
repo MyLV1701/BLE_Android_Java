@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="adv_primary_phy">
+        <item>LE 1M (Legacy)</item>
+        <item>LE Coded (Long range)</item>
+    </array>
+    <array name="adv_secondary_phy">
+        <item>LE 1M (Legacy)</item>
+        <item>LE 2M (High speed)</item>
+        <item>LE Coded (Long range)</item>
+    </array>
+</resources>

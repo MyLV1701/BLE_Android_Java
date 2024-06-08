@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Widget.Alert">
+    <TextView
+        android:id="@+id/status"
+        android:text="@string/no_location"
+        style="@style/Widget.AlertText"/>
+    <Button
+        android:textColor="#fff"
+        android:id="@+id/action_enable_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_enable"
+        style="?attr/buttonBarButtonStyle"/>
+    <Button
+        android:textColor="#fff"
+        android:id="@+id/action_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_more"
+        style="?attr/buttonBarButtonStyle"/>
+</LinearLayout>

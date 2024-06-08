@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:title="@string/settings_auto_service_discovery"
+        android:key="settings_auto_service_discovery"
+        android:defaultValue="true"
+        android:summaryOn="@string/settings_auto_service_discovery_enabled"
+        android:summaryOff="@string/settings_auto_service_discovery_disabled"/>
+    <SwitchPreferenceCompat
+        android:title="@string/settings_auto_request_highest_mtu"
+        android:key="settings_auto_request_highest_mtu"
+        android:defaultValue="false"/>
+    <ListPreference
+        android:entries="@array/settings_refresh_entries"
+        android:title="@string/settings_refresh_after_disconnect"
+        android:key="settings_refresh_after_disconnect"
+        android:summary="%s"
+        android:defaultValue="always"
+        android:entryValues="@array/settings_refresh_values"/>
+    <SwitchPreferenceCompat
+        android:title="@string/settings_discover_incoming_connections"
+        android:key="settings_show_incoming_connection"
+        android:defaultValue="true"
+        android:summaryOn="@string/settings_discover_incoming_connections_enabled"
+        android:summaryOff="@string/settings_discover_incoming_connections_disabled"/>
+    <ListPreference
+        android:entries="@array/settings_server_response_entries"
+        android:title="@string/settings_server_response"
+        android:key="settings_server_response_type"
+        android:summary="%s"
+        android:defaultValue="received"
+        android:entryValues="@array/settings_server_response_values"/>
+</androidx.preference.PreferenceScreen>

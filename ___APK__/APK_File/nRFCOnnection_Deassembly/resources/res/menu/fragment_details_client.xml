@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_read_all"
+        android:title="@string/menu_action_read_all"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_enable_all"
+        android:title="@string/menu_action_enable_all"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_read_rssi"
+        android:title="@string/menu_action_read_rssi"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_reliable_write"
+        android:title="@string/menu_action_reliable_write_title"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/action_begin_reliable_write"
+                android:title="@string/menu_action_begin_reliable_write"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_execute_reliable_write"
+                android:title="@string/menu_action_execute_reliable_write"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_abort_reliable_write"
+                android:title="@string/menu_action_abort_reliable_write"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>

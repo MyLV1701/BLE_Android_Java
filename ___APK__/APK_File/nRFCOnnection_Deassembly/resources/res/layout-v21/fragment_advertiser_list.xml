@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <no.nordicsemi.android.mcp.widget.RemovableRecyclerView
+        android:id="@android:id/list"
+        android:paddingBottom="@dimen/fab_recycler_view_padding"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/placeholderText"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@android:id/empty"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_advertising_packets"
+        android:drawableTop="@drawable/no_advertising"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_gravity="bottom|right"
+        android:id="@+id/fab"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/fab_ic_add"
+        app:backgroundTint="@color/fab"
+        app:elevation="4dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

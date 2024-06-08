@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="1000"
+        android:drawable="@drawable/tips_rename_device_1"/>
+    <item
+        android:duration="1000"
+        android:drawable="@drawable/tips_rename_device_2"/>
+    <item
+        android:duration="2000"
+        android:drawable="@drawable/tips_rename_device_3"/>
+    <item
+        android:duration="3000"
+        android:drawable="@drawable/tips_rename_device_4"/>
+</animation-list>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/adv_include_local_name"
+        android:title="@string/adv_new_include_local_name"/>
+    <item
+        android:id="@+id/adv_include_tx_power"
+        android:title="@string/adv_new_include_tx_power"/>
+    <item
+        android:id="@+id/adv_new_service_uuid"
+        android:title="@string/adv_new_service_uuid"/>
+    <item
+        android:id="@+id/adv_new_service_data"
+        android:title="@string/adv_new_service_data"/>
+    <item
+        android:id="@+id/adv_new_manufacturer_data"
+        android:title="@string/adv_new_manufacturer_data"/>
+</menu>

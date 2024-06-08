@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <no.nordicsemi.android.mcp.settings.AboutPreference
+        android:icon="@drawable/ic_nav_nrfconnect_selected"
+        android:title="@string/settings_about_mcp"/>
+    <Preference
+        android:icon="@drawable/ic_nav_github"
+        android:title="@string/settings_about_github"
+        android:summary="www.github.com/NordicSemiconductor/Android-nRF-Connect">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/NordicSemiconductor/Android-nRF-Connect"/>
+    </Preference>
+    <Preference
+        android:icon="@drawable/ic_nav_nordic"
+        android:title="@string/settings_about_nordic"
+        android:summary="www.nordicsemi.com">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.nordicsemi.com"/>
+    </Preference>
+    <Preference
+        android:icon="@drawable/ic_nav_thingy_selected"
+        android:title="@string/settings_about_thingy"
+        android:summary="www.nordicsemi.com/thingy">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.nordicsemi.com/thingy"/>
+    </Preference>
+</androidx.preference.PreferenceScreen>

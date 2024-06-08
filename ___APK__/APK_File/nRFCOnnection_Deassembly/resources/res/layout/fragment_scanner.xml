@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<no.nordicsemi.android.mcp.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:overhang="@dimen/device_list_sliding_pane_overhang">
+    <fragment
+        android:name="no.nordicsemi.android.mcp.scanner.graph.RssiGraphFragment"
+        android:id="@+id/graph_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <fragment
+        android:name="no.nordicsemi.android.mcp.scanner.DeviceListFragment2"
+        android:id="@+id/device_list_fragment"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</no.nordicsemi.android.mcp.widget.SlidingPaneLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/alert_dialog_padding"
+    android:paddingTop="@dimen/alert_dialog_padding_top"
+    android:paddingRight="@dimen/alert_dialog_padding"
+    android:paddingBottom="@dimen/alert_dialog_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/macros_name"
+            android:layout_weight="1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="textCapSentences"
+                android:imeOptions="flagNoFullscreen"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/action_clear"
+            style="@style/Widget.IconButton.Clear"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/macros_icon"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        app:spanCount="5"/>
+</LinearLayout>

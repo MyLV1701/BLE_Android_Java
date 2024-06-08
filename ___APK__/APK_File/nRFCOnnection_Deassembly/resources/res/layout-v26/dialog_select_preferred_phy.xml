@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/alert_dialog_padding"
+    android:paddingTop="@dimen/alert_dialog_padding_top"
+    android:paddingRight="@dimen/alert_dialog_padding"
+    android:paddingBottom="@dimen/alert_dialog_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+    <CheckBox
+        android:id="@+id/tx_le_1m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/phy_1m"/>
+    <CheckBox
+        android:id="@+id/tx_le_2m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phy_2m"/>
+    <CheckBox
+        android:id="@+id/tx_le_coded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phy_coded"/>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/red"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="1">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/dark_blue"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="2">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/orange"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="3">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/green"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="4">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/blue"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="5">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gold"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="6">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/purple"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="7">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/yellow"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="8">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/brown"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="9">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/celadon"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:maxLevel="10">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bordo"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+</level-list>

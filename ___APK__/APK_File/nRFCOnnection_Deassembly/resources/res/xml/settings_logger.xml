@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/settings_logger_entries"
+        android:title="@string/settings_logger_label"
+        android:key="settings_logger"
+        android:summary="%s"
+        android:defaultValue="ask"
+        android:entryValues="@array/settings_logger_values"/>
+    <no.nordicsemi.android.mcp.settings.OpenLoggerPreference
+        android:title="@string/settings_logger_open"
+        android:key="settings_logger_open"
+        android:summary="@string/settings_logger_summary"/>
+</androidx.preference.PreferenceScreen>

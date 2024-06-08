@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/HeaderBar">
+    <androidx.appcompat.widget.Toolbar
+        android:theme="@style/ActionBarThemeOverlay"
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ActionBarPopupThemeOverlay"
+        app:titleTextAppearance="@style/ActionBar.TitleText"/>
+    <include
+        android:id="@+id/ble_disabled"
+        layout="@layout/ble_disabled"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <no.nordicsemi.android.mcp.widget.ClosableTabLayout
+            android:theme="@style/ActionBarThemeOverlay"
+            android:id="@+id/toolbar_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/darkTabsIndicatorColor"
+            app:tabIndicatorHeight="3dp"
+            app:tabMinWidth="110dp"
+            app:tabMode="scrollable"
+            style="@style/Widget.MaterialComponents.TabLayout.Colored"/>
+        <View
+            android:id="@+id/toolbar_tabs_action_mode"
+            android:background="@color/actionMode"
+            android:focusable="true"
+            android:visibility="gone"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+    </FrameLayout>
+</com.google.android.material.appbar.AppBarLayout>

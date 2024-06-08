@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_menu_edit_light"
+        android:id="@+id/action_edit"
+        android:title="@string/menu_action_edit"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_menu_share_light"
+        android:id="@+id/action_share"
+        android:title="@string/menu_action_share"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_menu_logger_light"
+        android:id="@+id/action_log"
+        android:title="@string/menu_action_log"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_menu_copy_light"
+        android:id="@+id/action_copy"
+        android:title="@string/menu_action_copy"
+        app:showAsAction="ifRoom"/>
+</menu>

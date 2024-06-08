@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_bar_height">6dp</dimen>
+    <dimen name="navigation_bar_width">42dp</dimen>
+    <dimen name="status_bar_plus_toolbar_height">72dp</dimen>
+</resources>

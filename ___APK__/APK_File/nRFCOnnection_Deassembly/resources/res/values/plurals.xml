@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days_time">
+        <item quantity="one">%1$d day + %2$tR:%2$tS.%2$tL</item>
+        <item quantity="other">%1$d days + %2$tR:%2$tS.%2$tL</item>
+    </plurals>
+    <plurals name="macros_group_details">
+        <item quantity="zero">Empty folder</item>
+        <item quantity="one">1 item</item>
+        <item quantity="two">%d items</item>
+        <item quantity="few">%d items</item>
+        <item quantity="many">%d items</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="notif_message">
+        <item quantity="one">One connection open</item>
+        <item quantity="other">%d connections open</item>
+    </plurals>
+    <plurals name="notif_message_plus_advertising">
+        <item quantity="one">Advertising started, one connection open</item>
+        <item quantity="other">Advertising started, %d connections open</item>
+    </plurals>
+</resources>

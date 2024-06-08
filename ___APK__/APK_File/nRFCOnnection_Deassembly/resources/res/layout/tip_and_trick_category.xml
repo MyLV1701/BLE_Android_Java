@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/tips_card_margin"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginStart="@dimen/tips_card_margin_half"
+    android:layout_marginEnd="@dimen/tips_card_margin_half"
+    app:cardCornerRadius="8dp">
+    <TextView
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:padding="@dimen/tips_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/tips_cat_general"
+        android:drawablePadding="8dp"
+        android:textAllCaps="true"/>
+</androidx.cardview.widget.CardView>

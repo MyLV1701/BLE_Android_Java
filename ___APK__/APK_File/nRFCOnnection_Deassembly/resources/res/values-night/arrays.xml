@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="log_color">
+        <item>0xff00a9ce</item>
+        <item>0xffeddd2f</item>
+        <item>0xffffffff</item>
+        <item>0xff238c0f</item>
+        <item>0xffd77926</item>
+        <item>0xffff0000</item>
+    </array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingRight="@dimen/alert_dialog_padding"
+    android:paddingBottom="@dimen/alert_dialog_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/alert_dialog_padding_top"
+    android:paddingEnd="@dimen/alert_dialog_padding">
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

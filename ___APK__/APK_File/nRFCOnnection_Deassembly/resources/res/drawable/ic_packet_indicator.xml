@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <shape android:shape="oval">
+            <solid android:color="@color/red"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="1">
+        <shape android:shape="oval">
+            <solid android:color="@color/dark_blue"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="2">
+        <shape android:shape="oval">
+            <solid android:color="@color/orange"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="3">
+        <shape android:shape="oval">
+            <solid android:color="@color/green"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="4">
+        <shape android:shape="oval">
+            <solid android:color="@color/blue"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="5">
+        <shape android:shape="oval">
+            <solid android:color="@color/gold"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="6">
+        <shape android:shape="oval">
+            <solid android:color="@color/purple"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="7">
+        <shape android:shape="oval">
+            <solid android:color="@color/yellow"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="8">
+        <shape android:shape="oval">
+            <solid android:color="@color/brown"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="9">
+        <shape android:shape="oval">
+            <solid android:color="@color/celadon"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+    <item android:maxLevel="10">
+        <shape android:shape="oval">
+            <solid android:color="@color/bordo"/>
+            <size
+                android:height="@dimen/packet_icon_size"
+                android:width="@dimen/packet_icon_size"/>
+        </shape>
+    </item>
+</level-list>

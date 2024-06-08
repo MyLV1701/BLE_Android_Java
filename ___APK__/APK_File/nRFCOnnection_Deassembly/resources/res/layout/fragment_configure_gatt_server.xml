@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <no.nordicsemi.android.mcp.widget.RemovableRecyclerView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/placeholderText"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/server_disabled_info"
+        android:drawableTop="@drawable/server_disabled"
+        android:layout_centerInParent="true"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

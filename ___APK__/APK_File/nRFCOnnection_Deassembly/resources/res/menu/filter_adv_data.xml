@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_adv_dfu"
+        android:title="@string/filter_adv_dfu">
+        <menu>
+            <item
+                android:id="@+id/filter_adv_dfu_legacy"
+                android:title="@string/filter_adv_dfu_legacy"/>
+            <item
+                android:id="@+id/filter_adv_dfu_secure"
+                android:title="@string/filter_adv_dfu_secure"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/filter_adv_thingy52"
+        android:title="@string/filter_adv_thingy52"/>
+    <item
+        android:id="@+id/filter_adv_nrfbeacon"
+        android:title="@string/filter_adv_nrfbeacon"/>
+    <item
+        android:id="@+id/filter_adv_ibeacon"
+        android:title="@string/filter_adv_ibeacon"/>
+    <item
+        android:id="@+id/filter_adv_eddystone"
+        android:title="@string/filter_adv_eddystone"/>
+    <item
+        android:id="@+id/filter_adv_physical_web"
+        android:title="@string/filter_adv_physical_web"/>
+    <item
+        android:id="@+id/filter_adv_hrm"
+        android:title="@string/filter_adv_hrm"/>
+</menu>

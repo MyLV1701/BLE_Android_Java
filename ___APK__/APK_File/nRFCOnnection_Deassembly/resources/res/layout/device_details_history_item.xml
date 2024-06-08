@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/listBackgroundNormal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:importantForAccessibility="no">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/listBackgroundDisabled"
+        android:paddingLeft="12dp"
+        android:paddingRight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="36dp">
+        <ImageView
+            android:id="@+id/bar"
+            android:layout_width="@dimen/packet_icon_size"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_packet_data_indicator"/>
+        <TextView
+            android:textColor="@color/text"
+            android:id="@+id/data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:importantForAccessibility="no"/>
+        <LinearLayout
+            android:gravity="right"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:id="@+id/avg_container"
+            android:background="@drawable/frame"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/variant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adv_interval"/>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/adv_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_available"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/packets_container"
+        android:background="@drawable/row_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/device_details_history_subitem"/>
+        <include layout="@layout/device_details_history_subitem"/>
+        <include layout="@layout/device_details_history_subitem"/>
+        <include layout="@layout/device_details_history_subitem"/>
+        <include layout="@layout/device_details_history_subitem"/>
+        <include layout="@layout/device_details_history_subitem"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_menu_edit_light"
+        android:id="@+id/action_rename_device"
+        android:orderInCategory="1"
+        android:title="@string/menu_action_rename_device"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_disable_all"
+        android:orderInCategory="11"
+        android:title="@string/menu_action_disable_all"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_restore_popups"
+        android:orderInCategory="12"
+        android:title="@string/menu_action_restore_prompts"
+        app:showAsAction="never"/>
+</menu>

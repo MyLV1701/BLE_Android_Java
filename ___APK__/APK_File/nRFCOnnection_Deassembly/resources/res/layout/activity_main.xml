@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Space
+        android:id="@+id/insetsReceiver"
+        android:fitsSystemWindows="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/toolbar_closable_tabs"/>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/content"
+            android:background="@color/backgroundColor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            style="@style/HeaderShadow"/>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_gravity="start"
+        android:background="@color/navigationMenuBackground"
+        android:fitsSystemWindows="true"
+        android:layout_width="@dimen/navdrawer_width"
+        android:layout_height="match_parent"
+        app:insetForeground="#0000">
+        <androidx.fragment.app.FragmentContainerView
+            android:name="no.nordicsemi.android.mcp.MenuFragment"
+            android:id="@+id/navdrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

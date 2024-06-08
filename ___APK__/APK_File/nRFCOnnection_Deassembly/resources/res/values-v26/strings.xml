@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="adv_advertising_mode">Interval: &lt;160 – 16777215&gt;</string>
+    <string name="adv_advertising_tx_power">Tx Power Level: &lt;-127 – 1&gt; (dBm)</string>
+    <string name="adv_anonymous">Anonymous</string>
+    <string name="adv_extended_mode">Advertising Extension</string>
+    <string name="adv_include_tx_power">Include Tx Power</string>
+    <string name="adv_interval_calc">* 0.625ms = %dms</string>
+    <string name="adv_interval_parsing_error">Interval out of range</string>
+    <string name="adv_max_events_error">Value cannot be empty</string>
+    <string name="adv_max_events_hint">Number of events (1 – 255)</string>
+    <string name="adv_max_events_not_valid">Value must be in range 1 – 255</string>
+    <string name="adv_max_events_title">Maximum advertising events</string>
+    <string name="adv_no_maximum">No maximum</string>
+    <string name="adv_primary_phy_label">Primary PHY:</string>
+    <string name="adv_secondary_phy_label">Secondary PHY:</string>
+    <string name="adv_timeout_error">Duration cannot be empty</string>
+    <string name="adv_timeout_hint">Duration (ms)</string>
+    <string name="adv_timeout_title">Advertisement duration</string>
+    <string name="adv_timeout_too_long_error">Maximum duration is 655350 ms</string>
+    <string name="adv_tx_power_level_parsing_error">Tx Power Level out of range</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_autoconnect"
+        android:title="@string/action_autoconnect"/>
+    <item
+        android:id="@+id/action_bond"
+        android:title="@string/action_bond"/>
+    <item
+        android:id="@+id/action_unbind"
+        android:title="@string/action_unbond"/>
+</menu>

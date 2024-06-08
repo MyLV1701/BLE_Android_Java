@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dfu_graph_height">260dp</dimen>
+    <dimen name="preference_fragment_padding_side">100dp</dimen>
+    <dimen name="settings_category_layout_margin">100dp</dimen>
+    <dimen name="tutorial_page_padding">16dp</dimen>
+</resources>

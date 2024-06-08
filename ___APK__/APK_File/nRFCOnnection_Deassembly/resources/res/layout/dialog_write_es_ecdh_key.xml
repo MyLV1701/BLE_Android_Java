@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/alert_dialog_padding"
+    android:paddingTop="@dimen/alert_dialog_padding_top"
+    android:paddingRight="@dimen/alert_dialog_padding"
+    android:paddingBottom="@dimen/alert_dialog_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_ecdh_key"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ecdh_key_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ecdh_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/length_ecdh_key"
+            android:singleLine="false"
+            android:layout_weight="1"
+            android:inputType="text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eddystone_byte_array"/>
+    </LinearLayout>
+</LinearLayout>

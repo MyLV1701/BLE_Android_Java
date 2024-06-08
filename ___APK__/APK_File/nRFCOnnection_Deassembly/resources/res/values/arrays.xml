@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="adv_advertising_mode_values">
+        <item>LOW POWER (1000 ms)</item>
+        <item>BALANCED (250 ms)</item>
+        <item>LOW LATENCY (100 ms)</item>
+    </array>
+    <array name="adv_advertising_tx_power_values">
+        <item>ULTRA LOW (-21 dBm)</item>
+        <item>LOW (-15 dBm)</item>
+        <item>MEDIUM (-7 dBm)</item>
+        <item>HIGH (1 dBm)</item>
+    </array>
+    <array name="alert_categories">
+        <item>0 - Simple Alert</item>
+        <item>1 - Email</item>
+        <item>2 - News</item>
+        <item>3 - Call</item>
+        <item>4 - Missed Call</item>
+        <item>5 - SMS/MMS</item>
+        <item>6 - Voice Mail</item>
+        <item>7 - Schedule</item>
+        <item>8 - High Priority Alert</item>
+        <item>9 - Instant Message</item>
+        <item>251 - Service specific</item>
+        <item>252 - Service specific</item>
+        <item>253 - Service specific</item>
+        <item>254 - Service specific</item>
+        <item>255 - Service specific</item>
+    </array>
+    <array name="alert_commands">
+        <item>0 - Enable New Incoming Alert Notification</item>
+        <item>1 - Enable Unread Category Status Notification</item>
+        <item>2 - Disable New Incoming Alert Notification</item>
+        <item>3 - Disable Unread Category Status Notification</item>
+        <item>4 - Notify New Incoming Alert Immediately</item>
+        <item>5 - Notify Unread Category Status Immediately</item>
+    </array>
+    <array name="alert_level_op_codes">
+        <item>0x00 (No alert)</item>
+        <item>0x01 (Mild alert)</item>
+        <item>0x02 (High Alert)</item>
+    </array>
+    <array name="dfu_app_file_browser">
+        <item>Drive</item>
+        <item>File Manager</item>
+        <item>Total Commander</item>
+        <item>Search for others</item>
+    </array>
+    <array name="dfu_app_file_browser_action">
+        <item>market://details?id=com.google.android.apps.docs</item>
+        <item>market://details?id=com.rhmsoft.fm</item>
+        <item>market://details?id=com.ghisler.android.TotalCommander</item>
+        <item>market://search?q=file manager</item>
+    </array>
+    <array name="dfu_file_type">
+        <item>Distribution packet (ZIP)</item>
+        <item>Soft Device</item>
+        <item>Bootloader</item>
+        <item>Application</item>
+    </array>
+    <array name="dfu_op_codes">
+        <item>0x01 (Start DFU)</item>
+        <item>0x02 (Initialize DFU Parameters)</item>
+        <item>0x03 (Receive firmware image)</item>
+        <item>0x04 (Validate firmware)</item>
+        <item>0x05 (Activate image and reset)</item>
+        <item>0x06 (Reset system)</item>
+        <item>0x07 (Report received Image Size)</item>
+        <item>0x08 (Packet receipt notification request)</item>
+    </array>
+    <array name="eddystone_frame_types">
+        <item>UID</item>
+        <item>URL</item>
+        <item>TLM</item>
+        <item>EID</item>
+        <item>Clear slot</item>
+    </array>
+    <array name="eddystone_lock_states">
+        <item>Lock</item>
+        <item>Lock and change lock code</item>
+        <item>Disable automatic relock</item>
+    </array>
+    <array name="eddystone_security_types">
+        <item>Resolver\'s public ECDH Key</item>
+        <item>Lock code</item>
+    </array>
+    <array name="eddystone_url_scheme">
+        <item>http://www.</item>
+        <item>https://www.</item>
+        <item>http://</item>
+        <item>https://</item>
+    </array>
+    <array name="formats">
+        <item>BYTE ARRAY</item>
+        <item>BYTE</item>
+        <item>UINT 8</item>
+        <item>UINT 16</item>
+        <item>UINT 32</item>
+        <item>SINT 8</item>
+        <item>SINT 16</item>
+        <item>SINT 32</item>
+        <item>FLOAT 16</item>
+        <item>FLOAT 32</item>
+        <item>TEXT</item>
+        <item>BEACON MAJOR/MINOR</item>
+    </array>
+    <array name="hover_colors">
+        <item>@color/red</item>
+        <item>@color/dark_blue</item>
+        <item>@color/orange</item>
+        <item>@color/green</item>
+        <item>@color/blue</item>
+        <item>@color/gold</item>
+        <item>@color/purple</item>
+        <item>@color/yellow</item>
+        <item>@color/brown</item>
+        <item>@color/celadon</item>
+        <item>@color/bordo</item>
+    </array>
+    <array name="hrm_locations">
+        <item>Other (0)</item>
+        <item>Chest (1)</item>
+        <item>Wrist (2)</item>
+        <item>Finger (3)</item>
+        <item>Hand (4)</item>
+        <item>Ear Lobe (5)</item>
+        <item>Foot (6)</item>
+    </array>
+    <array name="log_color">
+        <item>0xff00a9ce</item>
+        <item>0xffb8b056</item>
+        <item>0xff000000</item>
+        <item>0xff238c0f</item>
+        <item>0xffd77926</item>
+        <item>0xffff0000</item>
+    </array>
+    <array name="log_levels">
+        <item>DEBUG</item>
+        <item>VERBOSE</item>
+        <item>INFO</item>
+        <item>APP</item>
+        <item>WARNING</item>
+        <item>ERROR</item>
+    </array>
+    <array name="mcumgr_commands">
+        <item>OS / Echo</item>
+        <item>OS / Reset</item>
+        <item>Image / Read state</item>
+        <item>Image / Test</item>
+        <item>Image / Confirm</item>
+        <item>Image / Erase</item>
+        <item>Stats / List</item>
+        <item>Stats / Read group</item>
+    </array>
+    <array name="mcumgr_mode">
+        <item>Test and Confirm</item>
+        <item>Test only</item>
+        <item>Confirm only</item>
+    </array>
+    <array name="racp_filters">
+        <item>Other</item>
+        <item>0x01 (Glucose: Sequence Number)</item>
+        <item>0x02 (Glucose: User Facing Time)</item>
+    </array>
+    <array name="racp_op_codes">
+        <item>0x01 (Report stored records)</item>
+        <item>0x02 (Delete stored records)</item>
+        <item>0x03 (Abort operation)</item>
+        <item>0x04 (Report number of stored records)</item>
+        <item>0x05 (Number of stored records response)</item>
+        <item>0x06 (Response Code)</item>
+    </array>
+    <array name="racp_operators">
+        <item>0x00 (Null)</item>
+        <item>0x01 (All records)</item>
+        <item>0x02 (Less than or equal to)</item>
+        <item>0x03 (Greater than or equal to)</item>
+        <item>0x04 (Within range of (inclusive))</item>
+        <item>0x05 (First record (i.e. oldest record))</item>
+        <item>0x06 (Last record (i.e. most recent record))</item>
+    </array>
+    <array name="racp_request_op_codes">
+        <item>0x01 (Report stored records)</item>
+        <item>0x02 (Delete stored records)</item>
+        <item>0x03 (Abort operation)</item>
+    </array>
+    <array name="racp_status_codes">
+        <item>0x01 (Success)</item>
+        <item>0x02 (Op Code not supported)</item>
+        <item>0x03 (Invalid Operator)</item>
+        <item>0x04 (Operator not supported)</item>
+        <item>0x05 (Invalid Operand)</item>
+        <item>0x06 (No records found)</item>
+        <item>0x07 (Abort unsuccessful)</item>
+        <item>0x06 (Procedure not completed)</item>
+        <item>0x06 (Operand not supported)</item>
+    </array>
+    <array name="sec_dfu_op_codes">
+        <item>0x01 (Create Object)</item>
+        <item>0x02 (Set PRN Value)</item>
+        <item>0x03 (Calculate Checksum)</item>
+        <item>0x04 (Execute)</item>
+        <item>0x06 (Select)</item>
+    </array>
+    <array name="server_service_configurations">
+        <item>Custom service</item>
+        <item>Link Loss service</item>
+        <item>Immediate Alert service</item>
+        <item>Current Time service</item>
+        <item>Heart Rate service</item>
+    </array>
+    <array name="settings_export_csv_separators_entries">
+        <item>, (comma)</item>
+        <item>; (semicolon)</item>
+        <item>\\t (tab)</item>
+    </array>
+    <array name="settings_export_csv_separators_values">
+        <item>,</item>
+        <item>;</item>
+        <item>\t</item>
+    </array>
+    <array name="settings_logger_entries">
+        <item>Save always</item>
+        <item>Always ask</item>
+        <item>Don\'t save</item>
+    </array>
+    <array name="settings_logger_values">
+        <item>always</item>
+        <item>ask</item>
+        <item>never</item>
+    </array>
+    <array name="settings_refresh_entries">
+        <item>Always</item>
+        <item>When not bonded</item>
+        <item>Never</item>
+    </array>
+    <array name="settings_refresh_values">
+        <item>always</item>
+        <item>not_bonded</item>
+        <item>never</item>
+    </array>
+    <array name="settings_scanning_api_entries">
+        <item>Jelly Bean (Android 4.3+)</item>
+        <item>Lollipop (Android 5+)</item>
+    </array>
+    <array name="settings_scanning_api_values">
+        <item>18</item>
+        <item>21</item>
+    </array>
+    <array name="settings_scanning_mode_lollipop_entries">
+        <item>Low power</item>
+        <item>Balanced</item>
+        <item>Low latency</item>
+    </array>
+    <array name="settings_scanning_mode_lollipop_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="settings_scanning_period_entries">
+        <item>5 seconds</item>
+        <item>45 seconds</item>
+        <item>1 minute</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+        <item>Manual</item>
+    </array>
+    <array name="settings_scanning_period_values">
+        <item>5</item>
+        <item>45</item>
+        <item>60</item>
+        <item>180</item>
+        <item>300</item>
+        <item>0</item>
+    </array>
+    <array name="settings_server_response_entries">
+        <item>Received data</item>
+        <item>Empty data</item>
+        <item>Always 0x1234</item>
+    </array>
+    <array name="settings_server_response_values">
+        <item>received</item>
+        <item>empty</item>
+        <item>hex1234</item>
+    </array>
+    <array name="settings_theme_entries">
+        <item>Use system settings</item>
+        <item>Based on time of the day</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </array>
+    <array name="tutorial_text">
+        <item>The nRF Connect is an application that lets you scan, discover, and debug your Bluetooth Low Energy devices.\nGo through this short tutorial to learn the new features available in version VERSION.</item>
+        <item>On the main screen you will see tabs with different features.\nThe SCANNER tab lists all advertising Bluetooth LE peripherals that are within your device\'s range. To scan on Android 6 or newer devices granting the location permission is required.</item>
+        <item>Tap the top view to expand the filter area. You may narrow your device list by name, address, advertising data, the strongest RSSI value, exclude some device classes, or show only those that are marked as favorites. Tap the icon next to a device to mark it as a favorite.</item>
+        <item>When expanded, every row shows the advertising data in an accessible form. Tap the row with a blue caption to switch the data parser. Use RAW and MORE buttons to display additional information. CLONE duplicates the last packet allowing you to advertise with (almost) the same data from the ADVERTISER tab.</item>
+        <item>Use CONNECT button to establish a connection to a selected device. Tap the three dots for more options. Connecting with the \'autoConnect\' option, the Android device will try to automatically restore the connection in case the link was lost.</item>
+        <item>Swipe the pane right to see the RSSI graph. Each device is identified by a color that corresponds with a line on the graph. The stronger a signal is, the higher the RSSI values. To export the graph to CSV or Excel format, long tap a device row and select SAVE icon in the top menu.</item>
+        <item>The BONDED tab lists all bonded Bluetooth LE devices even if they are not advertising at the moment, or are connected using another application.</item>
+        <item>The ADVERTISER tab allows you to compose the advertising packet if your device supports the peripheral role. Due to some limitations in the Android API there are some restrictions in what data may be advertised. Use the switch to enable or disable advertising.</item>
+        <item>Using the \'Configure GATT server\' option in the navigation menu, you may customize the server services, characteristics, and descriptors on your device. A configuration may be then shared between your devices by exporting it to XML files.</item>
+        <item>When connected, the application will try to discover services and show them on the list. Tap on a service row to show nested characteristics. Use the icons on the right to read the value, write, or enable notifications or indications.\nIf the device supports the Device Firmware Update profile, a DFU button will be visible.</item>
+        <item>When the GATT server has been configured, you will be able to set values of readable characteristics and descriptors and send notifications or indications from characteristics with appropriate properties.</item>
+        <item>Tap and hold on a service or characteristic to display the context menu from where you may copy its UUID. If the UUID is not known to nRF Connect, the menu will contain an option to set the display name. You may export and import names from the Definitions section available in the menu.</item>
+        <item>Swipe the list right to view the event log. You may customize the log level filter in the spinner below. The logs may be stored on your Android device if the \'nRF Logger\' application is installed.</item>
+        <item>Tap the floating button to open macros pane. Macros allow you to record set of operations and replay them with a single tap of a button. All client and server operations are supported, together with reading RSSI, requesting MTU or connection parameters (some features are available on Android 5+ only).</item>
+        <item>Tapping the \'Definitions\' option in the navigation menu lists all the names you gave to unknown services and characteristics, as well as those assigned by Bluetooth SIG or other parties, that are known to nRF Connect. You may export and import definitions to share it with another device or nRF Connect for Desktop.</item>
+        <item>Send a firmware update to your nRF51 or nRF52 device Over-the-Air using Device Firmware Update (DFU). Use the \'nrfutil\' tool to put your HEX files into Distribution packets (ZIP). Check the DFU documentation for more information.</item>
+        <item>Use the nRF Connect app to test your devices automatically. Define a test case in XML, configure test script on your build server and save time of your developers! Please, visit our GitHub page for more details (Settings-&gt;About) or check out the new scripts in the Nordic Semiconductor folder on this device.</item>
+    </array>
+    <array name="tutorial_text_update">
+        <item>This version of nRF Connect adds some improvements and bug fixes. In addition to features described on the following pages of this tutorial, we added an option to request high MTU just after establishing connection. You will find a new switch in Connectivity Settings.</item>
+        <item>On the scanner filter we added an option to exclude some device classes, that might have been considered as a noise, from the device list. Also, we extended the device name filter to allow hiding devices without a name.</item>
+        <item>MCU Manager is a hardware independent management library for 32-bit MCUs. Currently, mcumgr runs on both the Apache Mynewt and Zephyr operating systems. This update adds support for managing such devices using Simple Management Protocol (SMP). This includes Device Firmware Upgrade (DFU).</item>
+    </array>
+    <array name="tutorial_title">
+        <item>Welcome</item>
+        <item>Scanner</item>
+        <item>Filter devices</item>
+        <item>Advertisement details</item>
+        <item>Connect</item>
+        <item>RSSI graph</item>
+        <item>Bonded</item>
+        <item>Advertiser</item>
+        <item>GATT server</item>
+        <item>Connected</item>
+        <item>Server services</item>
+        <item>Name services &amp; characteristics</item>
+        <item>Event log</item>
+        <item>Macros</item>
+        <item>Definitions</item>
+        <item>Legacy and Secure DFU</item>
+        <item>Automated testing</item>
+    </array>
+    <array name="tutorial_title_update">
+        <item>What\'s new</item>
+        <item>Improved filter</item>
+        <item>MCU Manager (using SMP)</item>
+    </array>
+    <array name="ucp_op_codes">
+        <item>0x01 (Register New User)</item>
+        <item>0x02 (Consent)</item>
+        <item>0x03 (Delete User Data)</item>
+    </array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/alert_dialog_padding"
+    android:paddingTop="@dimen/alert_dialog_padding_top"
+    android:paddingRight="@dimen/alert_dialog_padding"
+    android:paddingBottom="@dimen/alert_dialog_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/display_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/alert_change_name_hint"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:inputType="textCapSentences"/>
+    <ImageButton
+        android:id="@+id/action_clear"
+        style="@style/Widget.IconButton.Clear"/>
+</LinearLayout>

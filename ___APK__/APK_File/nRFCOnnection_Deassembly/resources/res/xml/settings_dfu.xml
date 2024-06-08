@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreferenceCompat
+        android:title="@string/settings_dfu_packets_receipt_notification_label"
+        android:key="settings_packet_receipt_notification_enabled"
+        android:defaultValue="true"/>
+    <EditTextPreference
+        android:title="@string/settings_dfu_number_of_packets_label"
+        android:key="settings_number_of_packets"
+        android:dependency="settings_packet_receipt_notification_enabled"
+        android:defaultValue="10"
+        android:inputType="number"/>
+    <EditTextPreference
+        android:title="@string/settings_mbr_size"
+        android:key="settings_mbr_size"
+        android:defaultValue="4096"
+        android:dialogTitle="@string/settings_mbr_size_title"
+        android:inputType="number"/>
+    <SwitchPreferenceCompat
+        android:title="@string/settings_dfu_keep_bond"
+        android:key="settings_keep_bond"
+        android:defaultValue="true"/>
+    <SwitchPreferenceCompat
+        android:title="@string/settings_dfu_assume_dfu_mode"
+        android:key="settings_assume_dfu_mode"
+        android:defaultValue="false"/>
+    <no.nordicsemi.android.mcp.settings.AboutDfuPreference
+        android:title="@string/settings_dfu_about"
+        android:summary="@string/settings_dfu_about_summary"/>
+</androidx.preference.PreferenceScreen>

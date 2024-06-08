@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_menu_edit_light"
+        android:id="@+id/action_edit"
+        android:title="@string/menu_action_edit"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_menu_timeline"
+        android:id="@+id/action_timeline"
+        android:title="@string/menu_action_timeline"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="@drawable/ic_menu_share_light"
+        android:id="@+id/action_share"
+        android:title="@string/menu_action_share"
+        app:showAsAction="never"/>
+    <item
+        android:icon="@drawable/ic_menu_logger_light"
+        android:id="@+id/action_log"
+        android:title="@string/menu_action_log"
+        app:showAsAction="never"/>
+    <item
+        android:icon="@drawable/ic_menu_copy_light"
+        android:id="@+id/action_copy"
+        android:title="@string/menu_action_copy"
+        app:showAsAction="never"/>
+    <item
+        android:icon="@drawable/ic_menu_save_light"
+        android:title="@string/menu_action_save"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:icon="@drawable/ic_menu_txt"
+                android:id="@+id/action_save"
+                android:title="@string/menu_action_save_to_file"/>
+            <item
+                android:icon="@drawable/ic_menu_csv"
+                android:id="@+id/action_save_graph_csv"
+                android:title="@string/menu_action_save_graph_csv"/>
+            <item
+                android:icon="@drawable/ic_menu_excel"
+                android:id="@+id/action_save_graph_excel"
+                android:title="@string/menu_action_save_graph_excel"/>
+        </menu>
+    </item>
+</menu>

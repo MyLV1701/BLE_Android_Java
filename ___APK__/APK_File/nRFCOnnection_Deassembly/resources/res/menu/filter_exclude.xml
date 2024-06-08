@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/filter_exclude_apple"
+            android:title="@string/filter_exclude_apple"/>
+        <item
+            android:id="@+id/filter_exclude_microsoft"
+            android:title="@string/filter_exclude_microsoft"/>
+        <item
+            android:id="@+id/filter_exclude_mesh"
+            android:title="@string/filter_exclude_mesh"/>
+        <item
+            android:id="@+id/filter_exclude_beacons"
+            android:title="@string/filter_exclude_beacons"/>
+    </group>
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/alert_dialog_padding"
+    android:paddingTop="@dimen/alert_dialog_padding_top"
+    android:paddingRight="@dimen/alert_dialog_padding"
+    android:paddingBottom="@dimen/alert_dialog_padding_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/advertising_interval"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/eddystone_advertising_interval"
+        android:layout_weight="1"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eddystone_ms"/>
+</LinearLayout>

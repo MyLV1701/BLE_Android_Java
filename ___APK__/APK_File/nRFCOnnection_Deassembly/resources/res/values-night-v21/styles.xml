@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HeaderBar.Light" parent="@style/HeaderBar">
+        <item name="android:background">@color/actionBarColor</item>
+        <item name="elevation">1dp</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+    android:paddingLeft="@dimen/tips_card_margin"
+    android:paddingTop="@dimen/status_bar_plus_toolbar_height"
+    android:paddingRight="@dimen/tips_card_margin"
+    android:paddingBottom="@dimen/tips_card_margin"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/appbar"/>

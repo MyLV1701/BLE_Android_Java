@@ -1,0 +1,110 @@
+{
+  "title": "Tips and tricks",
+  "image": "tips_intro",
+  "text": "There are several available options when debugging Bluetooth\u00A0LE devices using nRF Connect, and some features are hard to find or only visible on devices with certain properties.\n\nHere you'll find a number of useful tips and tricks to make debugging easier.",
+  "categories":
+  [
+    {
+      "title": "General",
+      "image": "tips_cat_general",
+      "tips":
+      [
+        {
+          "title": "Service in background",
+          "image": "tips_service_in_background",
+          "text": "• When switched to another task, nRF Connect runs in the background maintaining existing connections.\n\n• Use the BACK button or the CLOSE action to exit nRF Connect and stop the service."
+        },
+        {
+          "title": "Debugging new connections",
+          "image": "tips_incoming_connection",
+          "text": "• When nRF Connect is running in the background, you will get a notification whenever a new Bluetooth\u00A0LE connects.\n\n• You can switch to nRF Connect immediately, or continue working in your app while nRF Connect establishes a connection and gathers logs in background.",
+          "more": "This feature requires the 'Show incoming connections' option to be switched ON in Settings (default). For some phones, the GATT Server must also be enabled."
+        },
+        {
+          "title": "Split screen",
+          "image": "tips_split_screen",
+          "text": "• Use Multi-Window mode to debug BLE in your app while nRF Connect is on the side.\n\n• nRF Connect will display incoming notifications or indications, but is unaware of what your app is sending or reading.",
+          "more": "Multi-Window mode is supported on Android 7 Nougat or newer."
+        },
+        {
+          "title": "Location permission",
+          "image": "tips_location_permission",
+          "text": "• Location permission is required in order to scan for Bluetooth\u00A0LE devices.\n\n• nRF Connect is not using this information in any way.\n\n• You may deny this permission and use other features of the app (connect to bonded devices, advertise, etc.).",
+          "more": "Scanning for Bluetooth LE devices requires Location permission starting from Android 6.0 Marshmallow. This is because beacons, like iBeacons or those with support for Eddystone™, may be used to determine the location of the phone and user."
+        }
+      ]
+    },
+    {
+      "title": "Scanner",
+      "image": "tips_cat_scanner",
+      "tips":
+      [
+        {
+          "title": "Custom parsers",
+          "image": "tips_custom_parsers",
+          "text": "• To set a custom parser, click a row with a blue title to switch the data parser of ambiguous advertising records.\n\n• Depending on data type and length, or Service Data UUID, different parsers are available.",
+          "more": "Some Service Data UUIDs have additional parsers. Those are: Temperature (0x1809, 0x2A6E), Pressure (0x2A6D), and Battery Level (0x180F)."
+        },
+        {
+          "title": "Custom parser visualization",
+          "image": "tips_custom_graphs",
+          "text": "• Set a custom parser and click the MORE button to show device advertisement details.\n\n• Value tabs, one for each parser, contain graphs showing how the value has changed over time.",
+          "more": "When the device changes its advertising data, each different packet gets a new color."
+        },
+        {
+          "title": "Rename devices",
+          "image": "tips_rename_device",
+          "text": "• Tap and hold on a device to select it.\n\n• Tap the EDIT icon in the menu to give a new display name.\n\n• The display name can be used in the Filter just like a normal name.",
+          "more": "The display name is associated with the device address meaning it will not be shown when the device changes its address. You can't set a name for an anonymous device."
+        },
+        {
+          "title": "Timeline",
+          "image": "tips_timeline",
+          "text": "• Select two or more devices and tap the TIMELINE icon to see their detailed view with their advertising packets in chronological order.\n\n• Tap a packet on the list below the graph to mark it on the graph.",
+          "more": "Devices have the same color as on the SCANNER screen. This is different from the device details view, where each color corresponds to a different advertising packet of a single device."
+        }
+      ]
+    },
+    {
+      "title": "GATT Server",
+      "image": "tips_cat_server",
+      "tips":
+      [
+        {
+          "title": "GATT Server",
+          "image": "tips_server",
+          "text": "• GATT Server is a phone's local GATT database that is available for connected Bluetooth LE devices.\n\n• After setting up the GATT server, the server configuration is available from the SERVER tab on the connection screen.",
+          "more": "A remote device discovers a sum of services created by all Android applications. Use unique UUIDs if want to avoid race conditions."
+        },
+        {
+          "title": "Predefined services",
+          "image": "tips_predefined_services",
+          "text": "• Predefined GATT Server services have fully implemented behavior.\n\n• On the animation above, the Heart Rate service sends HR Measurement notifications to a connected device.\n\n• Manual operations are disabled for predefined services.",
+          "more": "Predefined services also work when 'Show incoming connections' is disabled on connections without a dedicated tab."
+        }
+      ]
+    },
+    {
+      "title": "Macros",
+      "image": "tips_cat_macros",
+      "tips":
+      [
+        {
+          "title": "Macros",
+          "image": "tips_macro_intro",
+          "text": "• Record a macro while performing BLE operations to easily repeat them with a single tap.\n\n• Export macros or folders and import them on other devices.\n\n• Read the tutorial for more information."
+        },
+        {
+          "title": "Re-recording a macro",
+          "image": "tips_macro_recording",
+          "text": "• You may play a macro or do step-by-step operations while recording another macro.\n\n• Prepare partial macros and use them to create the final one.\n\n• Re-recording and skipping invalid operations can be used to correct errors."
+        },
+        {
+          "title": "Mirroring macros",
+          "image": "tips_macro_options",
+          "text": "• Mirror a macro to create another one as if it was recorded by the remote device.\n\n• To run a mirrored macro clone device's services and set them up in GATT Server configuration."
+        }
+      ]
+    }
+  ]
+}
